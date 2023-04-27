@@ -10,6 +10,44 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   "Signup"
   </title>
 </head>
+Step 1:
+Copy the code to website
+<script>
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push(
+{
+  event : 'view_item',
+        ecommerce:
+        {
+            item_name:"Web Analytics",
+            item_id:"Course_001",
+            item_cat:"Online Courses",
+}
+});
+</script>
+
+Step 2
+Create an event : view_item as custom event
+
+Step 3
+Add parameters
+
+Event name: view_item
+#Choose variable(+), Variable Configuration, select Data Layer Variable and in that give ecommerce.parametername eg: ecommerce.item_name and save
+Parameter Name		Value
+item_name			{{ecomm_item_name}}
+item_id                 {{ecomm_item_id}}
+item_cat			{{ecomm_item_cat}}
+
+Step 4
+Priview the website and check in debug view
+
+Step 5
+Click Admin--> Custom Definition--> Create Custom Dimensions(take 24 hours to update)
+Step 6
+Fill the details Dimension name, Event Description and Event parameter(Could be selected from the list)
+Step 7
+Goto explorer
 <body>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NZLGVHS"
